@@ -9,8 +9,9 @@ Python 3 is required for this wrapper.
 ### Discord Bot
 The Discord Bot requires `discord.py` and `python-dotenv` which can both be installed through `pip`.
 1. Download and Extract the files from the Release Tab.
-2. Open `.env`, and replace `TOKEN = abc` with `TOKEN = <your bot token>`.
-3. Start your SCP:SL server, and run the `bot.py` file to start the bot. 
+2. Create a file named `.env`, and add `TOKEN = <your bot token>`.
+3. Open `commands.py` and on line 10, change the `IP`, `Port`, and `Password` to the correct values.
+4. Start your SCP:SL server, and run the `bot.py` file to start the bot. 
 The default prefix for the bot is `=`.
 
 ####Discord Bot Commmands
