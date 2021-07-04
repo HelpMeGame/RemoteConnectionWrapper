@@ -6,7 +6,21 @@ This wrapper requires [this plugin](https://github.com/HelpMeGame/SCPSLRemoteCon
 ## How to use
 Python 3 is required for this wrapper.
 
-Make sure to install `discord.py` if you are using the Discord Bot.
+### Discord Bot
+The Discord Bot requires `discord.py` and `python-dotenv` which can both be installed through `pip`.
+1. Download and Extract the files from the Release Tab.
+2. Open `.env`, and replace `TOKEN = abc` with `TOKEN = <your bot token>`.
+3. Start your SCP:SL server, and run the `bot.py` file to start the bot. 
+The default prefix for the bot is `=`.
+
+####Discord Bot Commmands
+- `playerlist`/`pl` - Displays Player List
+- `uptime` - Displays Uptime
+*(The following commands require a role with Admin to use.)*
+- `broadcast <message>` - Broadcast a message to the SCP:SL server
+- `ban <player game ID>` - Bans a player for a month
+- `kick <player game ID>` - Kicks a player
+
 
 ### Creating a server socket
 A Server socket can be created by calling `serverhandler.SCPSL(ip, port, password)`. This will create an object of the SCPSL class, that contains basic commands and actions for the plugin.
